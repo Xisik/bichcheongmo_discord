@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="3;url=https://discord.gg/서버코드">
+  <title>Discord로 이동 중...</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 24px;
+      animation: pulse 1.5s infinite;
+    }
+
+    .logo svg { width: 100%; height: 100%; }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #a0aec0;
+      margin-bottom: 32px;
+    }
+
+    .progress-bar {
+      width: 240px;
+      height: 4px;
+      background: #2d2d4e;
+      border-radius: 99px;
+      margin: 0 auto 24px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #5865F2, #7289da);
+      border-radius: 99px;
+      animation: fill 3s linear forwards;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #5865F2;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn:hover {
+      background: #4752c4;
+      transform: translateY(-1px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.08); }
+    }
+
+    @keyframes fill {
+      from { width: 0%; }
+      to   { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Discord 공식 로고 SVG -->
+    <div class="logo">
+      <svg viewBox="0 -28.5 256 256" xmlns="http://www.w3.org/2000/svg">
+        <path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2"/>
+      </svg>
+    </div>
+
+    <h1>Discord 서버로 이동 중...</h1>
+    <p>3초 후 자동으로 이동합니다.</p>
+
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+
+    <a class="btn" href="https://discord.gg/서버코드">지금 바로 이동 →</a>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://discord.gg/dhyaWzEuK2";
+    }, 3000);
+  </script>
+</body>
+</html>
